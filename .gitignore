@@ -216,3 +216,19 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+# ==========================================
+# Deepfake Project Specific Skips
+# ==========================================
+# Ignore raw datasets and video folders
+*fake_videos/
+*real_videos/
+ffp/
+
+# Ignore processed frames and extracted faces
+extracted_frames/
+processed_faces/
+
+# Ignore massive trained PyTorch model checkpoints
+*.pt
+*.pth
+*.h5
